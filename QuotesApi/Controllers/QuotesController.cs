@@ -21,13 +21,13 @@ namespace QuotesApi.Controllers
             return Ok(quotes);
         }
 
-        /* [HttpGet]
+        [HttpGet]
          [Route("api/Quotes/PagingQuote/{pageNumber=}/{pageSize=}")]
          public IHttpActionResult PagingQuote(int pageNumber, int pageSize)
          {
              var quotes = quotesDbContext.Quotes.OrderBy(q => q.Id);
              return Ok(quotes.Skip((pageNumber - 1) * pageSize).Take(pageSize));
-         } */
+         }
 
 
 
